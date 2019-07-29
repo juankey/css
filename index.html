@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="https://www.shareicon.net/download/2016/01/21/706885_people_512x512.png" />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Selectores en Css</title>
+</head>
+<body>
+    <header>
+
+    </header>    
+    <nav>
+        <h1>Selectores  css</h1>
+        <p>existen muchos selectores en css</p>
+        <p>es el nexo de unión entre la hoja de estilos y los documentos a los que se aplique dicha hoja. existiendo varios tipos de selectores</p>
+        <ol>Clasificación de selectores
+            <li>Selectores Simples</li>
+            <li>Selector compuesto</li>
+            <li>selector complejo</li>
+         </ol>
+        <ol>Combinación de selectores
+            <li>Selector desendiente "espacio en blanco" o (&gt;&gt;)</li>
+            <li>selector hijo directo(&gt;)</li>
+            <li>selector hermanos posteriores (&#126;)</li>
+            <li>selector hermano posterior (&#43;)</li>
+            <li>Selector de agrupación (,)</li>
+         </ol>
+    </nav>
+    <main>
+        <h2>Selectores Simples</h2>
+            <ol>
+                <li>Selector de tipo o selector de etiqueta</li>
+                <li>Selector de  clase</li>
+                <li>selector de id</li>
+                <li>selector universal</li>
+                <li>selector de atributo</li>
+            </ol>
+        <article>
+            <h3>selector de tipo o selector de etiqueta</h3>
+            <p>Selecciona todos los elementos que coinciden con el nombre de nodo,de manera simple, son las mismas etiquetas html
+            </p>
+            <p>sintaxis: nav, article, main, body...</p>
+            <p>ejemplo: 
+                <pre><code>
+                    nav{
+                        color:red;
+                    }
+                    main{
+                        background:green;
+                    }
+                </code></pre>    
+            </p>
+        </article>
+        <article>
+                <h3>selector de clase</h3>
+                <p>selectores que pueden agrupar a varios elementos seleccionadolos mediante el atributo class(.)
+                </p>
+                <p>.classname, .principal</p>
+                <p>ejemplo: 
+                    <pre><code>
+                        .classname{
+                            color:red;
+                        }
+                        .principal{
+                            background:green;
+                        }
+                    </code></pre>    
+                </p>
+        </article>
+        <article>
+                <h3>selector de id </h3>
+                <p>Selecciona un elemento basado en su atributo "id", es un atributo unico. no pudiendo haber otro de su mismo nombre
+                </p>
+                <p>sintaxis: #class, #betroon</p>
+                <p>ejemplo: 
+                    <pre><code>
+                        #class{
+                            color:red;
+                        }
+                        #betroon
+                            background:green;
+                        }
+                    </code></pre>    
+                </p>
+        </article>
+        <article>
+                <h3>selector universal</h3>
+                <p>Selecciona todos los elementos, siendo utilizado para resetear los estilos del documento html.
+                </p>
+                <p>sintaxis: *</p>
+                <p>ejemplo: 
+                    <pre><code>
+                        *, *::before, *::after{
+                            padding: 0;
+                        }
+                        
+                    </code></pre>    
+                </p>
+        </article>
+        <article>
+                <h3>selector de atributo</h3>
+                <p>Selecciona un atributo del documento html
+                </p>
+                <p>sintaxis: lang, type</p>
+                <p>ejemplo: 
+                    <pre><code>
+                            [attr~=value]{
+                            padding: 0;
+                            }
+                      
+                    </code></pre>    
+                </p>
+        </article>
+    </main>
+</body>
+</html>
